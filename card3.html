@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+
+
+  *{
+      margin: 0;
+    }
+    html,
+    body {
+    height: 100%;
+    width: 100%;
+    background-color: peachpuff;
+    position: relative;
+    overflow-x: hidden;
+  }
+  #page1{
+    height: 100%;
+    position: relative;
+    
+  }
+  #main-body{
+    height: 100%;
+    position: relative;
+  }
+  #heading{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(216, 75, 75); */
+    background-color: #b19079;
+    padding: 2vh;
+  }
+  #home{
+    display: flex;
+    justify-content: right;
+    padding: 1vh;
+    background-color: #6f5a4b;
+    font-size: 1.5vw;
+
+  }
+
+  
+
+
+  footer{
+    position: fixed;
+    background-color:  #6f5a4b;
+    bottom: 0;
+    width: 100%;
+    color: aliceblue;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+  }
+  main{
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+    /* height: 100%; */
+    background: linear-gradient(45deg,#efebe0,#ab6832,#faebd7,#b19079);
+    animation: color 12s ease-in-out infinite;
+    background-size: 300% 300%;
+  }
+  @keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+    }
+  }
+
+
+  #details{
+    /* margin-top: 10%; */
+    background-color: #4b1c13c3;
+    /* height: 80%; */
+    width: 60%;
+    margin-bottom: 5vh;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    color: #c6a988;
+    padding: 2vh;
+    border-radius: 3vh;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-container img{
+    border-radius: 3vh;
+    width: 15vw;
+  }
+  #parts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12vh;
+  }
+  #part2{
+    margin-top: 8vh;
+    margin-left: 20vw;
+    cursor: pointer;
+  }
+  .heading_d{
+    padding: 3vw;
+    font-size: 2vw;
+  }
+  #home{
+    padding-right: 4vh;
+  }
+  a{
+    all: unset;
+    cursor: pointer;
+  }
+
+
+  form {
+    background-color: #0b0b0ba1;
+    width: 80%;
+    display: block;
+    /* height: 15vh; */
+    /* width: 20vw; */
+    padding: 4vh;
+    border: 1px solid black;
+    border-radius: 5px;
+  
+}
+
+form label, form input, form textarea, form button {
+    height: auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5vh;
+  }
+  
+  input, textarea {
+    padding: 1vh;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    background-color: #c6a988;
+}
+
+button {
+    padding: 1vh;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#form{
+  margin-top: 10%;
+  /* width: 20vw; */
+  width: 40vw;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1024px) { /* Tablets */
+  #details {
+    width: 80%;
+    font-size: 1.8vw;
+    padding: 3vh;
+  }
+  .img-container img {
+    width: 30vw;
+  }
+  #parts {
+    flex-direction: column;
+    align-items: center;
+  }
+  #part2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  #form {
+    width: 60vw;
+  }
+  input, textarea {
+    font-size: 1.5vw;
+  }
+  button {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) { /* Mobile devices */
+  #heading h1 {
+    font-size: 4vw;
+    text-align: center;
+  }
+  #home {
+    font-size: 3vw;
+    text-align: center;
+  }
+  #details {
+    width: 90%;
+    font-size: 2.5vw;
+  }
+  .img-container img {
+    width: 50vw;
+  }
+  #parts {
+    flex-direction: column;
+    align-items: center;
+  }
+  #form {
+    width: 75vw;
+  }
+  input, textarea {
+    font-size: 2vw;
+  }
+  button {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) { /* Small Phones */
+  #heading h1 {
+    font-size: 5vw;
+  }
+  #home {
+    font-size: 4vw;
+  }
+  #details {
+    width: 95%;
+    font-size: 3vw;
+  }
+  .img-container img {
+    width: 65vw;
+  }
+  #parts {
+    flex-direction: column;
+    align-items: center;
+  }
+  #form {
+    width: 85vw;
+  }
+  input, textarea {
+    font-size: 2.5vw;
+  }
+  button {
+    font-size: 3vw;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  
+
+
+
+  <div id="main-body">
+
+
+    <nav>
+      <div id="heading"><h1>Book Showcase: Book 3 Details</h1></div>
+        <a href="index.html">
+          <div id="home">HOME</div>
+        </a>
+    </nav>
+
+    <main>
+      
+
+      <div id="details">
+
+        <div class="heading_d">
+         <span style="font-weight: 600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Book 1: Joseph Anton
+          A Merori
+         </span>
+ 
+         
+        </div>
+        
+        <div id="parts">
+          <div id="part1">
+             <div class="img-container">
+               <img src="josephanton.jpg" alt="">
+             </div>
+          </div>
+  
+          <div id="part2">
+            <div>
+              <details>
+                <summary>Genre</summary>
+                <ul>
+                  <li>Technology</li>
+                  <li>Education</li>
+                </ul>
+              </details>
+    
+              <details>
+                <summary>Index Page</summary>
+              <ul>
+                <li>Introduction</li>
+                <li>Chapter 1: Overview</li>
+                <li>Chapter 2: Advanced Concepts</li>
+              </ul>
+              </details>
+    
+              <details>
+                <summary>Authors</summary>
+                Jane Doe, Jhon Smith
+              </details>
+    
+              <details>
+                <summary>Overview</summary>
+                This book provides detail insights into technology and communication skills for professionals and students
+              </details>
+    
+              <details>
+                <summary>Competative Exam Relavence</summary>
+                Highly recommended fot IT and communication-related government exams.
+              </details>
+    
+              <details>
+                <summary>Purchase Links</summary>
+                <ul>
+                  <li><a href="https://www.amazon.com/">Amazon</a></li>
+                  <li><a href="https://www.flipkart.com/">Flipcart</a></li>
+                </ul>
+              </details>
+              
+
+            </div>
+            
+          </div>
+        </div>
+
+        <div id="form">
+          <form >
+            <label for="Name">Name </label>
+            <input type="text" >
+           
+    
+            <label for="Feedback">Feedback</label>
+            <textarea name="Feedback" id="">
+    
+            </textarea>
+    
+            <button style="font-size: 1vw;">Submit Feedback</button>
+          </form>
+        </div>
+
+ 
+      </div>
+        
+
+
+    </main>
+
+
+      <footer>
+        <div>
+          @ 2025 Book Showcase | All rights reserved
+        </div>
+      </footer>
+
+
+
+
+
+  </div>
+
+
+
+
+</body>
+</html>

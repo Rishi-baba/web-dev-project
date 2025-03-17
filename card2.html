@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+
+
+  *{
+      margin: 0;
+    }
+    html,
+    body {
+    height: 100%;
+    width: 100%;
+    background-color: peachpuff;
+    position: relative;
+    overflow-x: hidden;
+  }
+  #page1{
+    height: 100%;
+    position: relative;
+    
+  }
+  #main-body{
+    /* height: 100%; */
+    position: relative;
+  }
+  #heading{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(216, 75, 75); */
+    background-color: #b19079;
+    padding: 2vh;
+  }
+  #home{
+    display: flex;
+    justify-content: right;
+    padding: 1vh;
+    background-color: #6f5a4b;
+    font-size: 1.5vw;
+
+  }
+
+  
+
+
+  footer{
+    position: fixed;
+    background-color:  #6f5a4b;
+    bottom: 0;
+    width: 100%;
+    color: aliceblue;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+  }
+  main{
+    height: 100%;
+    background: linear-gradient(45deg,#efebe0,#ab6832,#faebd7,#b19079);
+    animation: color 12s ease-in-out infinite;
+    background-size: 300% 300%;
+  }
+  @keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+    }
+  }
+
+
+  #details{
+    background-color: #4b1c13c3;
+    /* height: 96%; */
+    width: 60%;
+    margin-left: 18vw;
+    color: #c6a988;
+    padding: 2vh;
+    border-radius: 3vh;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .img-container img{
+    border-radius: 3vh;
+    width: 15vw;
+  }
+  #parts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12vh;
+  }
+  #part2{
+    margin-top: 8vh;
+    margin-left: 20vw;
+    cursor: pointer;
+  }
+  .heading_d{
+    padding: 3vw;
+    font-size: 2vw;
+  }
+  #home{
+    padding-right: 4vh;
+  }
+  a{
+    all: unset;
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+  
+
+
+
+  <div id="main-body">
+
+
+    <nav>
+      <div id="heading"><h1>Book Showcase: Book 3 Details</h1></div>
+        <a href="index.html">
+          <div id="home">HOME</div>
+        </a>
+    </nav>
+
+    <main>
+      
+
+      <div id="details">
+
+        <div class="heading_d">
+         <span style="font-weight: 600; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Book 1: Joseph Anton
+          A Merori
+         </span>
+ 
+         
+        </div>
+        
+        <div id="parts">
+          <div id="part1">
+             <div class="img-container">
+               <img src="josephanton.jpg" alt="">
+             </div>
+          </div>
+  
+          <div id="part2">
+            <div>
+              <details>
+                <summary>Genre</summary>
+                <ul>
+                  <li>Technology</li>
+                  <li>Education</li>
+                </ul>
+              </details>
+    
+              <details>
+                <summary>Index Page</summary>
+              <ul>
+                <li>Introduction</li>
+                <li>Chapter 1: Overview</li>
+                <li>Chapter 2: Advanced Concepts</li>
+              </ul>
+              </details>
+    
+              <details>
+                <summary>Authors</summary>
+                Jane Doe, Jhon Smith
+              </details>
+    
+              <details>
+                <summary>Overview</summary>
+                This book provides detail insights into technology and communication skills for professionals and students
+              </details>
+    
+              <details>
+                <summary>Competative Exam Relavence</summary>
+                Highly recommended fot IT and communication-related government exams.
+              </details>
+    
+              <details>
+                <summary>Purchase Links</summary>
+                <ul>
+                  <li><a href="https://www.amazon.com/">Amazon</a></li>
+                  <li><a href="https://www.flipkart.com/">Flipcart</a></li>
+                </ul>
+              </details>
+    
+            </div>
+          </div>
+        </div>
+
+         
+ 
+      </div>
+        
+
+
+    </main>
+
+
+      <footer>
+        <div>
+          @ 2025 Book Showcase | All rights reserved
+        </div>
+      </footer>
+
+
+
+
+
+  </div>
+
+
+
+
+</body>
+</html>
