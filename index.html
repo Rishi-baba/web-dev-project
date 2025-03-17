@@ -230,7 +230,7 @@
   #main-body{
     /* margin-top: -2.9vh; */
     /* position: relative; */
-    opacity: 0;
+    opacity: 1;
     height: 100%;
   }
   #heading{
@@ -355,17 +355,17 @@
 }
 
 
-@media screen and (max-width: 1024px) { /* Tablets */
+@media screen and (max-width: 1024px) { 
   #display {
     margin-top: 2vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 2vh;
     justify-content: center;
     align-items: center;
   }
   .card {
-    padding: 12vh;
+    /* padding: 16vh; */
     width: 30vw;
     height: auto;
     display: flex;
@@ -383,12 +383,13 @@
   #display {
     margin-top: 2vh;
     flex-direction: column;
+
     align-items: center;
     gap: 2vh;
 
   }
   .card {
-    padding: 10vh;
+    padding: 13vh;
     width: 50vw;
     height: auto;
     display: flex;
@@ -404,7 +405,7 @@
     gap: 2vh;
   }
   .card {
-    padding: 7vh;
+    padding: 10vh;
     width: 80vw;
     height: auto;
     display: flex;
@@ -413,24 +414,24 @@
   }
 }
 
-@media screen and (orientation: landscape) { 
+/* @media screen and (orientation: landscape) { 
   #display {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2vw; /* Adjust spacing */
-    margin-top: 5vh;
+    gap: 2vw;
+    margin-top: -5vh;
   }
   
   .card {
-    width: 20vw; 
-    height: auto;
+    width: 18vw; 
+    height: 25vh;
     padding: 2vh;
   }
 
   .card-front img {
     width: 100%;
-    height: auto;
+    height: 40vh;
   }
 
   #home {
@@ -450,10 +451,9 @@
   footer div {
     font-size: 1.5vw;
   }
-}
+}  */
 
 @media screen and (max-height: 500px) { 
-  /* Ensures side-by-side layout for short-height screens (landscape mode) */
   #display {
     display: flex;
     flex-direction: row;
@@ -462,17 +462,17 @@
     margin-top: 2vh;
     
   }
-  
+
   .card {
     width: 18vw;
-    height: auto;
+    height: 55vh;
     padding: 2vh;
 
   }
 
   .card-front img {
     width: 100%;
-    height: auto;
+    height: 55vh;
   }
 
   #home {
@@ -525,7 +525,7 @@
     
     
     </div>
-  </div>     
+  </div>      
 
   <div id="main-body">
 
