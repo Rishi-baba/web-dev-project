@@ -34,6 +34,7 @@ function loadingAnimation(){
   });
 
   tl.to("#loader", {
+    overflow:"hidden",
     opacity: 0,
     duration: 0.2,
     delay: 1.5,
@@ -43,7 +44,8 @@ function loadingAnimation(){
         opacity: 1,
         duration: 0.6, 
         ease: "power2.out" });
-        document.body.style.overflow = "hidden";
+        document.body.style.overflow = "auto";
+        
     },
   });
   // tl.from("#main-body",{
