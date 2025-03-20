@@ -29,7 +29,6 @@
     }
     html,
     body {
-    
     height: 100%;
     width: 100%;
     background-color: peachpuff;
@@ -249,7 +248,12 @@
     background-color: #6f5a4b;
     font-size: 1.5vw;
     padding-right: 4vw;
-
+    position: relative;
+    z-index: 999;
+  }
+  a{
+    all: unset;
+    cursor: pointer;
   }
   main div h4{
     padding: 3vh;
@@ -533,7 +537,7 @@
 
       <nav>
         <div id="heading"><h1>Welcome to Book Showcase</h1></div>
-        <div id="home">HOME</div>
+        <a href="index1.html"><div id="home">HOME</div></a>
       </nav>
 
       <main>
